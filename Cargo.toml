@@ -1,0 +1,17 @@
+[package]
+name = "quickentity-ffi"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+quickentity-rs = { git = "https://github.com/atampy25/quickentity-rs.git" }
+serde = { version = "1.0.137", features = ["derive"] }
+serde_json = { version = "1.0.81", features = [
+    "arbitrary_precision",
+    "preserve_order",
+] }
+
+[lib]
+crate-type = ["rlib", "cdylib"]
+name = "quickentity_ffi"
+path = "src/lib.rs"
