@@ -12,6 +12,6 @@ serde_json = { version = "1.0.81", features = [
 ] }
 
 [lib]
-crate-type = ["rlib", "cdylib"]
+crate-type = ["cdylib"]
 name = "quickentity_ffi"
 path = "src/lib.rs"
